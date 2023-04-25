@@ -35,16 +35,14 @@ function App() {
       // console.log('in app.js');
       // console.log(expenseDataFromNewExpense);
       setExpenses(prevExpenses=>{
-        return [expenseDataFromNewExpense,...prevExpenses]
+        return [expenseDataFromNewExpense, ...prevExpenses]
       })
     }
   return (
     <div>
       <NewExpense  onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
- 
 
- 
      </div>
   );
 } 
